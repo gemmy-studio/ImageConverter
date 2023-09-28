@@ -95,6 +95,7 @@ def main():
             with Image.open(uploaded_file) as img:
                 width, height = img.size
                 st.write(f"이미지 넓이: {width}, 이미지 높이: {height}")
+                st.image(uploaded_file, caption='업로드 파일')
 
         option = st.selectbox(
             '변환 형식 설정',
